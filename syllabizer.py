@@ -8,6 +8,7 @@
 #  - Silent 'e' in compound words (eg. whitecap [wait.cap])
 #  - favor onset (unless invalid onset/coda generated)
 #  - account for sonority sequencing principle and other phonotactic rules
+#  - syllable boundaries between vowel clusters
 #  - render syllables phonologically
 #
 def syllabize_en(word):
