@@ -22,8 +22,11 @@ def syllabize_en(word):
 	# Special cases
 	specials = {
 		'': [],
-		'colonel': [ 'col', 'nel' ],
-		'business': [ 'bus', 'ness' ]
+		'colonel'  : [ 'col',  'nel'   ],
+		'business' : [ 'bus',  'ness'  ],
+		'something': [ 'some', 'thing' ],
+		'sometime' : [ 'some', 'time'  ],
+		'somewhere': [ 'some', 'where' ],
 	}
 	if word in specials:
 		return specials[word]
