@@ -3,6 +3,8 @@ from halibot import HalModule
 
 class Haiku(HalModule):
 
+	HAL_MINIMUM = "0.2.0"
+
 	topics = {
 		'haiku': 'Watches for when someone bequeths a haiku, unbeknowst to themself.'
 	}
@@ -52,4 +54,3 @@ class Haiku(HalModule):
 		haiku = self.haiku(words, syls)
 		if haiku != None:
 			self.reply(msg, body='I proffer that your prose is a poem, a haiku:\n' + haiku)
-
